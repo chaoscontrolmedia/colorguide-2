@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>Blend Operations</title>  
+{% endblock %}
+
+{% block content %}
+
+
+
+
+
+<!--Will add photo examples and modals.-->
+
+
+
+
+
+
+
+
+
+
+<article class="flex-article">
+    <div class="header"><h2>{{ title }}</h2></div>
+    
+    <div class="flex-container">
+        <div class="row">
+        {% for blend in blend_modes %}
+        <div class="col-md-3">
+            <div class="border">
+
+                {{ blend.blenddescription() }}
+
+            </div>
+        </div> {% endfor %}
+    </div>
+           
+        
+        
+     </div>
+    </article>
+
+
+    
+        
+   
+
+
+
+
+{% endblock %}
